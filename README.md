@@ -8,6 +8,7 @@
 
 ### Supported Modules
 - **ALU**
+
     An Arithmetic/Logical Unit (ALU) combines a variety of mathematical and logical operations into a single unit.
 - **Instruction Memory**
     * e instruction memory has a single read port.
@@ -20,4 +21,5 @@
     * It has a single read/write port.
     * If its write enable, WE, is asserted, then it writes data WD into address A on the rising edge of the cloc
 - **Control Unit**
+
     The control unit computes the control signals based on the opcode and funct3, funct7 fields ofthe instruction, Instr14:12 and Instr30 respectively. Most of the control information comes from the opcode, but R-type instructions and I-type instructions also use the funct3 and funct7 fields to determine the ALU operation. Thus, we will simplify our design by factoring the control unit into two blocks of combinational logic.
